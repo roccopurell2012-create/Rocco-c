@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rocco Creations — Design Every Aspect of Your Business</title>
+  <meta name="description" content="Rocco Creations designs websites, logos, advertisements, posters, apps, and 3D printing. Start your inquiry today." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+</head>
+<body>
+  <!-- Rocket launch overlay -->
+  <div id="rocket-overlay" class="rocket-overlay" aria-hidden="true">
+    <div class="rocket-trail"></div>
+    <div class="rocket-ship" id="rocket-ship">
+      <svg viewBox="0 0 64 96" width="64" height="96" aria-hidden="true">
+        <defs>
+          <linearGradient id="bodyGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+            <stop offset="0%" stop-color="#e8f0ff"/>
+            <stop offset="50%" stop-color="#ffffff"/>
+            <stop offset="100%" stop-color="#c8d8f0"/>
+          </linearGradient>
+          <linearGradient id="flameGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#ffeb3b"/>
+            <stop offset="50%" stop-color="#ff6d00"/>
+            <stop offset="100%" stop-color="#d50000"/>
+          </linearGradient>
+        </defs>
+        <path d="M32 4 C20 20 16 40 16 56 L16 68 L48 68 L48 56 C48 40 44 20 32 4Z" fill="url(#bodyGrad)" stroke="#4a6fa5" stroke-width="1.5"/>
+        <circle cx="32" cy="36" r="8" fill="#1a237e" stroke="#7c9cff" stroke-width="2"/>
+        <circle cx="32" cy="36" r="4" fill="#90caf9" opacity="0.8"/>
+        <path d="M16 60 L4 78 L16 72Z" fill="#ff5252"/>
+        <path d="M48 60 L60 78 L48 72Z" fill="#ff5252"/>
+        <path d="M22 68 L32 92 L42 68Z" fill="url(#flameGrad)" class="flame"/>
+        <path d="M26 68 L32 82 L38 68Z" fill="#fff59d" class="flame-inner" opacity="0.9"/>
+      </svg>
+    </div>
+    <div class="curtain" id="curtain"></div>
+  </div>
+
+  <!-- Main app shell -->
+  <div id="app">
+    <!-- NAV -->
+    <header class="site-header">
+      <a href="#/" class="brand" data-nav="/">
+        <img src="assets/logo.svg" alt="Rocco Creations" class="brand-logo" width="48" height="48" />
+        <div class="brand-text">
+          <span class="brand-name">Rocco Creations</span>
+          <span class="brand-tag">Design · Build · Launch</span>
+        </div>
+      </a>
+      <nav class="nav-links">
+        <a href="#/" data-nav="/" class="nav-link">Home</a>
+        <a href="#/services" data-nav="/services" class="nav-link">Services</a>
+        <a href="#/inquire" data-nav="/inquire" class="nav-link nav-cta">Start Inquiry</a>
+        <a href="#/admin" data-nav="/admin" class="nav-link nav-admin">Admin</a>
+      </nav>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main id="main-content">
+      <!-- Views injected by router -->
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="assets/logo.svg" alt="" width="36" height="36" />
+          <strong>Rocco Creations</strong>
+        </div>
+        <p>We design every aspect of your business — websites, logos, ads, posters, apps &amp; 3D printing.</p>
+        <p class="footer-copy">&copy; <span id="year"></span> Rocco Creations. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/rocket.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
