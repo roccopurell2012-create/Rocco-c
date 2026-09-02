@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Rocco Creations logo">
+  <defs>
+    <linearGradient id="rc-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1b3d"/>
+      <stop offset="100%" stop-color="#1a237e"/>
+    </linearGradient>
+    <linearGradient id="rc-rocket" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#a8c5ff"/>
+    </linearGradient>
+    <linearGradient id="rc-flame" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ffeb3b"/>
+      <stop offset="55%" stop-color="#ff6d00"/>
+      <stop offset="100%" stop-color="#e53935"/>
+    </linearGradient>
+    <linearGradient id="rc-ring" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7c9cff"/>
+      <stop offset="100%" stop-color="#ff6d00"/>
+    </linearGradient>
+  </defs>
+  <!-- Circle badge -->
+  <circle cx="64" cy="64" r="60" fill="url(#rc-bg)"/>
+  <circle cx="64" cy="64" r="56" fill="none" stroke="url(#rc-ring)" stroke-width="3"/>
+  <!-- Stars -->
+  <circle cx="28" cy="36" r="1.5" fill="#fff" opacity="0.9"/>
+  <circle cx="96" cy="30" r="1.2" fill="#fff" opacity="0.7"/>
+  <circle cx="102" cy="52" r="1" fill="#fff" opacity="0.6"/>
+  <circle cx="24" cy="70" r="1.1" fill="#fff" opacity="0.5"/>
+  <!-- Rocket body -->
+  <path d="M64 22 C52 36 48 52 48 66 L48 78 L80 78 L80 66 C80 52 76 36 64 22Z"
+        fill="url(#rc-rocket)" stroke="#5c7cfa" stroke-width="1.5"/>
+  <!-- Window -->
+  <circle cx="64" cy="50" r="8" fill="#0d1b3d" stroke="#7c9cff" stroke-width="2"/>
+  <circle cx="64" cy="50" r="4" fill="#90caf9" opacity="0.85"/>
+  <!-- Fins -->
+  <path d="M48 72 L36 90 L48 84Z" fill="#ff5252"/>
+  <path d="M80 72 L92 90 L80 84Z" fill="#ff5252"/>
+  <!-- Flame -->
+  <path d="M54 78 L64 108 L74 78Z" fill="url(#rc-flame)"/>
+  <path d="M58 78 L64 96 L70 78Z" fill="#fff59d" opacity="0.95"/>
+  <!-- Accent arc -->
+  <path d="M30 88 Q64 102 98 88" fill="none" stroke="#ff6d00" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+</svg>
